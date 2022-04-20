@@ -10,7 +10,7 @@ $ convert original.png -resize 100x100 new.png
 
 > Use to convert filetype like doc, xlxs, ppt to pdf.
 
-**Dependencies**
+*Dependencies*
 + [libreoffice](https://www.libreoffice.org/)
 
 ```bash
