@@ -24,3 +24,16 @@ $ libreoffice --headless --convert-to pdf *.{docx, xls, ppt}
 ```bash
 $ journalctl -u postgresql --since "600 min ago"
 ```
+
+4. Reload coreaudio Hackintosh
+
+> Sometime when sleep and wake up, sound of my hackintosh laptop is so weird. Y should reload sound card:
+
+```bash
+$ ps aux | grep 'coreaudio[d]' | awk '{print $2}' | xargs sudo kill
+```
+or 
+```bash
+$ sudo killall coreaudiod
+```
+
